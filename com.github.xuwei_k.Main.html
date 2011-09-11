@@ -1,0 +1,81 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <style type="text/css" media="all">
+        @import url('./css/maven-base.css');
+        @import url('./css/maven-theme.css');
+      </style>
+      <link type="text/css" rel="stylesheet" href="./css/prettify.css" />
+      <script type="text/javascript" src="./css/prettify.js"></script>
+      <link type="text/css" media="print" rel="stylesheet" href="./css/print.css" />
+      <link type="text/css" rel="stylesheet" href="./css/tooltip.css" />
+      <script type="text/javascript" src="css/jquery.js"></script>
+      <script type="text/javascript" src="css/jquery.cookie.js"></script>
+      <script type="text/javascript" src="css/jquery.hotkeys.js"></script>
+      <script type="text/javascript" src="css/jquery.jstree.js"></script>
+      <script type="text/javascript" src="./css/tooltip.js"></script>
+      <script language="javascript">
+      function init() {  prettyPrint(); };
+      /* found on : http://www.tek-tips.com/faqs.cfm?fid=6620 */
+      String.prototype.endsWith = function(str) { return (this.match(str+'$') == str) };
+      function changeWidth(id,width) {  document.getElementById(id).style.width = width; };
+      function changeMarginLeft(id, margin) { document.getElementById(id).style.marginLeft = margin; };
+      function toggleImage(image) {
+        if (image.src.endsWith('images/expanded.gif')) 
+          image.src = 'images/collapsed.gif';
+        else 
+          image.src = 'images/expanded.gif';
+      };
+      function showHide(id) {
+        element = document.getElementById(id);
+        element.style.display = (element.style.display == 'block')? 'none' : 'block';
+      };
+      function showHideByClass(name) {
+		    var elements = document.getElementsByClassName(name);
+        for (i = 0; i < elements.length; i++) {
+		      elements[i].style.display = (elements[i].style.display == 'none') ? elements[i].style.display = '': 'none';
+        }
+      };
+      function showByClass(name) {
+        var elements = document.getElementsByClassName(name);
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.display = 'block';
+        }
+      };
+      function hideByClass(name) {
+        var elements = document.getElementsByClassName(name);
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.display = 'none';
+        }
+      };
+      function showById(id) {
+        document.getElementById(id).style.display = ''
+      };
+      function hideById(id) {
+        document.getElementById(id).style.display = 'none'
+      };
+    </script>
+      <script language="javascript">window.onload=init;</script>
+      <!-- the tabber.js file must be loaded after the onload function has been set, in order to run the
+           tabber code, then the init code -->
+      <script type="text/javascript" src="./css/tabber.js"></script> 
+      <link type="text/css" media="screen" rel="stylesheet" href="./css/tabber.css" /> 
+    </head><body><div id="container"><title>Specs2 Html Output Example</title><a name="Specs2+Html+Output+Example"></a><h2>Specs2 Html Output Example</h2><status class="ok"><div class="level0"><a name="Specs2+%E3%81%A4%E3%81%8B%E3%81%A3%E3%81%A6+Html+%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E3%81%8A%EF%BC%88+%EF%BC%BE%CF%89%EF%BC%BE%EF%BC%89"></a><h3>Specs2 つかって Html 出力してみたお（ ＾ω＾）</h3>
+<ul>
+  <li><p><a href="https://github.com/etorreborre/specs2/">specs2</a> っていうテストライブラリのUser Guide 眺める</p></li>
+  <li><p>へー <a href="http://etorreborre.github.com/specs2/guide/org.specs2.guide.Runners.html#Html+output">html 吐き出せる機能</a>があるのかーちょっとためしてみよう(｀・ω・´)</p></li>
+  <li><p>おーできた＼(^o^)／ あれ、この html の感じ、どこかで見たことが(・ω・｀)?</p></li>
+  <li><p>そういえば、Specs2のUser Guide のそれぞれのページの下に、なにやら実行時間が記録されたような謎の記述ががががが</p></li>
+</ul><p><img alt="User Guide" src="http://cdn-ak.f.st-hatena.com/images/fotolife/x/xuwei/20110911/20110911190550.png?1315735627" /></p>
+<ul>
+  <li><p>こっこれは・・・ <a href="https://github.com/etorreborre/specs2/blob/1.6/src/test/scala/org/specs2/guide/SpecStructure.scala">https://github.com/etorreborre/specs2/blob/1.6/src/test/scala/org/specs2/guide/SpecStructure.scala</a></p></li>
+  <li><p>つまり Specs2 は Users Guide 自体を Specs2 によって生成している。なにを言っているか分からないと思うが(ry</p></li>
+  <li><p>というわけで、これ Specs2 で生成してみましたうぉーーー(｀・ω・´)/</p></li>
+  <li><p><a href="http://etorreborre.github.com/specs2/guide/org.specs2.guide.Runners.html">このあたり見てもらえばわかりますが</a> 色々な結果をhtmlで出力するために、markdown形式で記述できるようになってるらしいです</p></li>
+</ul></div></status></div><div id="tree">
+      <ul><li id="1709752019"><a href="com.github.xuwei_k.Main.html#Specs2+Html+Output+Example">Specs2 Html Output Example</a>
+          <ul><li><a href="com.github.xuwei_k.Main.html#Specs2+%E3%81%A4%E3%81%8B%E3%81%A3%E3%81%A6+Html+%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F%E3%81%8A%EF%BC%88+%EF%BC%BE%CF%89%EF%BC%BE%EF%BC%89">Specs2 つかって Html 出力してみたお（ ＾ω＾）</a>
+          <ul></ul>
+        </li></ul>
+        </li></ul>
+      <script>$(function () {	$('#tree').jstree({'core':{'initially_open':['1709752019','1709752019'], 'animation':200}, 'plugins':['themes', 'html_data']}); });</script>
+    </div></body></html>
